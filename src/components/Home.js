@@ -10,7 +10,7 @@ import { onAuthStateChanged, signOut } from 'firebase/auth';
 
 function Home(){
 
-        const slides = [
+        const images = [
             {url: "http://localhost:3000/coin.jpg", title: "SLUCoin"},
             {url: "http://localhost:3000/shop.jpg", title: "Shop"},
             {url: "http://localhost:3000/slu_logo.jpg", title: "SLU"}
@@ -39,7 +39,7 @@ function Home(){
             <div>
                 <h1>Welcome To SLUCoin {user?.email}</h1>
                 <div style = {containerStyles}>
-                <ImageSlider slides = {slides}/>
+                <ImageSlider slides = {images}/>
                 </div>
                 <div className = "sign-out">
                 <button type="Sign Out" className="btn btn-dark btn-lg btn-block" onClick={logOut}>Sign out</button>
